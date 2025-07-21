@@ -139,9 +139,9 @@ export default function Documents() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="p-6 space-y-6">
       {/* Header */}
-      <div className="p-6">
+      <div>
         <h2 className="text-2xl font-bold text-foreground">文檔管理</h2>
         <p className="text-muted-foreground">管理知識庫中的所有文檔</p>
       </div>

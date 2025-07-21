@@ -95,9 +95,9 @@ export default function Search() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="p-6 space-y-6">
       {/* Header */}
-      <div className="p-6">
+      <div>
         <h2 className="text-2xl font-bold text-foreground">搜索檢索</h2>
         <p className="text-muted-foreground">在知識庫中快速找到您需要的信息</p>
       </div>

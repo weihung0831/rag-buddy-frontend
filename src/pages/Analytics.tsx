@@ -44,13 +44,13 @@ export default function Analytics() {
   const getActivityIcon = (type: string) => {
     switch (type) {
       case 'search':
-        return <Search className="h-4 w-4 text-blue-500" />;
+        return <Search className="h-4 w-4 text-primary" />;
       case 'upload':
-        return <FileText className="h-4 w-4 text-green-500" />;
+        return <FileText className="h-4 w-4 text-success" />;
       case 'chat':
-        return <MessageCircle className="h-4 w-4 text-purple-500" />;
+        return <MessageCircle className="h-4 w-4 text-accent-foreground" />;
       case 'download':
-        return <Activity className="h-4 w-4 text-orange-500" />;
+        return <Activity className="h-4 w-4 text-warning" />;
       default:
         return <Activity className="h-4 w-4 text-muted-foreground" />;
     }
@@ -68,7 +68,7 @@ export default function Analytics() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="p-6 space-y-6">
       {/* Header */}
       <div>
         <h2 className="text-2xl font-bold text-foreground">使用統計</h2>
