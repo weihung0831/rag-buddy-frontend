@@ -89,7 +89,7 @@ export default function Search() {
     let highlightedText = text;
     highlights.forEach(highlight => {
       const regex = new RegExp(`(${highlight})`, 'gi');
-      highlightedText = highlightedText.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
+      highlightedText = highlightedText.replace(regex, '<mark class="bg-warning/30 px-1 rounded">$1</mark>');
     });
     return highlightedText;
   };
@@ -97,7 +97,7 @@ export default function Search() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
+      <div className="p-6">
         <h2 className="text-2xl font-bold text-foreground">搜索檢索</h2>
         <p className="text-muted-foreground">在知識庫中快速找到您需要的信息</p>
       </div>

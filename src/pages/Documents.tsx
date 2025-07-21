@@ -84,14 +84,14 @@ export default function Documents() {
   const getFileIcon = (type: string) => {
     switch (type) {
       case 'pdf':
-        return <FileIcon className="h-5 w-5 text-red-500" />;
+        return <FileIcon className="h-5 w-5 text-destructive" />;
       case 'docx':
       case 'doc':
-        return <FileIcon className="h-5 w-5 text-blue-500" />;
+        return <FileIcon className="h-5 w-5 text-primary" />;
       case 'txt':
-        return <FileIcon className="h-5 w-5 text-green-500" />;
+        return <FileIcon className="h-5 w-5 text-success" />;
       case 'md':
-        return <FileIcon className="h-5 w-5 text-purple-500" />;
+        return <FileIcon className="h-5 w-5 text-accent-foreground" />;
       default:
         return <FileText className="h-5 w-5 text-muted-foreground" />;
     }
@@ -141,7 +141,7 @@ export default function Documents() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
+      <div className="p-6">
         <h2 className="text-2xl font-bold text-foreground">文檔管理</h2>
         <p className="text-muted-foreground">管理知識庫中的所有文檔</p>
       </div>
